@@ -1,0 +1,42 @@
+.s-aprendizado{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+    .container{
+        @include flex(column,center,center);
+    }
+
+    .top-info{
+        @include flex(column,center,center);
+        width: 100%;
+        max-width: 100.8rem;
+        gap: 1.2rem;
+        h2{
+            letter-spacing: -1.44px;
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
+
+    .grid-cards-aprendizado{
+        display: grid;
+        margin-top: 5.4rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3.2rem;
+
+        .l{
+            @include flex(column, center, center);
+            gap: 3.2rem;
+        }
+
+        .r{
+            @include flex(column, center, center);
+            gap: 3.2rem;
+
+        }
+   
+    }
+}

@@ -1,48 +1,66 @@
-.top-filter{
-    margin-top: 12rem;
-    margin-bottom: 7.3rem;
-    h2{
-        margin-bottom: 3.2rem;
-    }
-}
-
-.filters{
-    @include flex(row,center,center);
-    width: 100%;
-    max-width: 121.6rem;
-    gap: 1.2rem;
-
-}
-
-.filter-tab{
-    width: auto;
-    font: $text-p;
-    padding: 1.7rem 1.2rem;
-    background-color: transparent;
-    border-radius: 1rem;
-    border: 1px solid #E0E0E0;
-    cursor: pointer;
-    transition: all .5s ease-out;
-
-    &:hover{
-        background-color: $brand-primary-green;
-        border: 1px solid $brand-primary-green;
+.s-cursos{
+    background-color: white;
+    .container{
+        @include flex(column,center,center);
+    
         
+        .top-filter{
+            margin-top: 12rem;
+            margin-bottom: 7.3rem;
+            h2{
+                text-align: center;
+                margin-bottom: 3.2rem;
+            }
+        }
+    
+        .filters{
+            @include flex(row,center,center);
+            width: 100%;
+            max-width: 121.6rem;
+            gap: 1.2rem;
+    
+        }
+    
+        .filter-tab{
+            width: auto;
+            font: $text-p;
+            padding: 1.7rem 1.2rem;
+            background-color: transparent;
+            border-radius: 1rem;
+            border: 1px solid #E0E0E0;
+            cursor: pointer;
+            transition: all .5s ease-out;
+    
+            &:hover{
+                background-color: $brand-primary-green;
+                border: 1px solid $brand-primary-green;
+                
+            }
+    
+    
+            &.active{
+                border: none;
+                background-color: $brand-primary-green;
+                font: $btn-font-b;
+            }
+    
+        }
+    
+        .grid-cursos{
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+            gap: 3.2rem;
+            margin-bottom: 6.4rem;
+            justify-items: flex-start;
+        }
+    
+        // button{
+        //     margin-top: 6.4rem;
+        // }
+    
+    
     }
-
-
-    &.active{
-        border: none;
-        background-color: #E0E721;
-        font: $btn-font-b;
-    }
-
+    
 }
 
-.grid-cursos{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    gap: 3.2rem;
-    justify-items: center;
-}
