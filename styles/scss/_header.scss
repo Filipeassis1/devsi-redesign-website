@@ -1,0 +1,129 @@
+header{
+
+    .container{
+        @include flex(row, center, space-between);
+        margin-top: 4rem;
+
+        .nav-btns{
+
+            @include flex(row, center, space-between);
+            gap: 2.4rem;
+
+            nav{
+
+                ul{
+                    @include flex(row, center, space-between);
+                    gap: 4.2rem;
+
+                    li{
+                        a{
+                            font: $text-p;
+                            color: $brand-primary-dark;
+                            transition: all .5s ease-in;
+
+                            &:hover{
+                                margin-bottom: 4px;
+                                text-decoration: underline;
+                                text-underline-offset: 4px; 
+
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+
+            .mobile-menu{
+                display: none;
+            }
+
+            .btns-header{
+                @include flex(row, center, space-between);
+                width: 100%;
+                max-width: 41.6rem;
+            }
+            .icon-menu-mobile{
+                display: none;
+            }
+            
+
+        }
+    }
+
+    @include repsonsive(1080px){
+
+        .nav-btns{
+
+            nav{
+                display: none;
+            }
+
+            
+            .mobile-menu{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding-left: 3.2rem;
+                padding-top:6rem;
+                max-width: 300px;
+                height: 100vh;
+                background-color: white;
+                
+
+                ul{ 
+                    margin-bottom: 3.2rem;
+
+                    @include flex(column, flex-start , center);
+                    gap: 2.4rem;
+                    
+                    li{
+
+                        a{
+                            font: $text-p;
+                            color: $brand-primary-dark;
+
+                        }
+                    }
+
+
+                    
+                }
+
+
+                .btns-menu-mobile{
+                    @include flex(column, flex-start, space-between);
+                    gap: 1.6rem;
+
+                }
+           
+            }
+
+            .mobile-menu.active{
+                display: block;
+                z-index: 3;
+            }
+
+            .btns-header{
+                display: none !important;
+            }
+
+            .icon-menu-mobile{
+                display: block !important;
+                z-index: 1;
+            }
+
+             
+        }
+
+          
+
+    
+
+
+    }
+
+    
+
+}
