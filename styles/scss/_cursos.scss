@@ -16,6 +16,7 @@
     
         .filters{
             @include flex(row,center,center);
+            flex-wrap: wrap;
             width: 100%;
             max-width: 121.6rem;
             gap: 1.2rem;
@@ -62,6 +63,8 @@
     
     
     }
+
+    
     
 }
 
