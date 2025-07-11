@@ -1,0 +1,18 @@
+.s-faq{
+
+    .container{
+        @include flex(column,center,center);
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        gap: 6.4rem;
+
+        .collapsible{
+            width: 100%;
+            max-width: 86.8rem;           
+
+        }
+    }
+
+
+
+}

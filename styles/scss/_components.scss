@@ -246,7 +246,7 @@
 }
 
 .card-green{
-    @include flex(column,flex,space-between);
+    @include flex(column,flex-start,space-between);
     flex: 1;
     width: 100%;
     max-width: 38.4rem;
@@ -254,5 +254,62 @@
     padding: 2.4rem;
     border-radius: 2rem;
     background-color: $brand-primary-green;
+
+}
+
+.item-faq{
+    @include flex(column,center,center);
+    border-radius: 1.2rem ;
+    background-color: $brand-primary-dark;
+    width: 100%;
+    max-width: 86.8rem;
+    padding: 1.6rem 2.9rem ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+
+    .head-faq{
+        @include flex(row,center,flex-start);
+        width: 100%;
+        max-width: 81rem;
+        gap: 2rem;
+    }
+
+    .resposta-faq{
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        max-width: 68.7rem;
+        transition: all 0.4s ease;
+
+        p{
+            font: $pfaq;
+            color: $gray-cd;
+            padding-bottom: 4.2rem;
+        }
+    }
+
+    &.active{
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        
+        .head-faq{
+            .icon-faq{
+                transform: rotate(45deg);
+                transition: transform 0.3s ease;
+            }
+        }
+
+        .resposta-faq{
+            opacity: 1;
+            max-height: 300px;
+            margin-top: 1rem;
+        }
+    }
+
+
 
 }

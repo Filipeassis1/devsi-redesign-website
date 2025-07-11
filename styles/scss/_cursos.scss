@@ -1,5 +1,6 @@
 .s-cursos{
     background-color: white;
+
     .container{
         @include flex(column,center,center);
     
@@ -55,9 +56,9 @@
             justify-items: flex-start;
         }
     
-        // button{
-        //     margin-top: 6.4rem;
-        // }
+       .btn-primary{
+        margin-bottom: 10rem;
+       }
     
     
     }
