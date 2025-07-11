@@ -51,7 +51,7 @@ header{
         }
     }
 
-    @include repsonsive(1080px){
+    @include responsive(1080px){
 
         .nav-btns{
 
@@ -68,7 +68,6 @@ header{
                 padding-left: 3.2rem;
                 padding-top:6rem;
                 max-width: 300px;
-                height: 100vh;
                 background-color: white;
                 
 
@@ -103,6 +102,9 @@ header{
             .mobile-menu.active{
                 display: block;
                 z-index: 3;
+                height: 100vh;
+
+
             }
 
             .btns-header{
@@ -113,17 +115,8 @@ header{
                 display: block !important;
                 z-index: 1;
             }
-
              
         }
 
-          
-
-    
-
-
     }
-
-    
-
 }

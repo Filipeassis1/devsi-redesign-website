@@ -9,3 +9,10 @@ p{
     font: $text-p18;
     color: $gray-paragraf;
 }
+
+@include responsive(960px){
+
+    h1{
+        font: $h1-mobile;
+    }
+}

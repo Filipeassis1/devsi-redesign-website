@@ -76,7 +76,7 @@
                     <button class="btn-header-primary">Sou Empresa <img src="/assets/svgs/empresa.svg" alt="Sou empresa"></button>
                 </div>
                 <div class="icon-menu-mobile" id="hamburguer">
-                    <img src="/assets/svgs/hamburguer-menu.svg" alt="menu hamburguer-menu" onclick="toggleMenu()">
+                    <img src="/assets/svgs/hamburguer-menu.svg" alt="menu hamburguer-menu"  id="hamburguer-icon">
                 </div>
             </div>
         </div>
@@ -90,8 +90,24 @@
             </div>
 
             <button class="btn-primary">Quero me inscrever</button>
+            
+            <div class="card-flutuante">
+                <div class="img-card-flutuante">
+                    <img src="/assets/svgs/VideoCamera.svg" alt="">
+                </div>
+               
+                <div class="txt-card-flutuante">
+                    <strong>+ 100</strong>
+                    <span>Vídeo Aulas</span>
+
+                </div>
+            </div>
+
+
 
             <div class="video-hero">
+
+
                 <iframe 
                 src="https://www.youtube.com/embed/aYo3aFMaG5Q?controls=0&modestbranding=1&rel=0&autoplay=1&mute=1" 
                 title="YouTube video player" 
@@ -105,9 +121,63 @@
         </div>
     </div>
 
+    <div class="s-cursos">
+        <div class="container">
+
+            <div class="top-filter">
+                <h2>Explore os nossos cursos</h2>
+                <div class="filters">
+                    <button class="filter-tab " data-filter="todos">Todos</button>
+                    <button class="filter-tab " data-filter="excel">Excel</button>
+                    <button class="filter-tab " data-filter="informatica">Informática</button>
+                    <button class="filter-tab " data-filter="tiEmpresarial">TI Empresarial</button>
+                    <button class="filter-tab " data-filter="lgpd">LGPD</button>
+                    <button class="filter-tab " data-filter="powerPoint">Power Point</button>
+                </div>
+            </div>
+
+            <div class="grid-cursos" id="gridCursos">
+
+                <div class="curso-card" data-category="informatica">
+                    <div class="image-card">
+                        <img src="/assets/imgs/informatica-essencial.jpg" alt="curso informartica">
+                    </div>
+
+                    <div class="info-card">
+                        <div class="time-card">
+                            <div class="hora">
+                                <img src="/assets/svgs/hora-card.svg" alt="">
+                                <span>7 Horas</span>
+                            </div>
+                            <div class="tarefas">
+                                <img src="/assets/svgs/tarefas-card.svg" alt="">
+                                <span> 5 Exercicios</span>
+                               
+                            </div>
+                        </div>
+
+                        <div class="titulo">
+                            <h4>Informática Essencial</h4>
+                        </div>
+
+                        <div class="bottom">
+                            <div class="price">R$ 157,00 </div>
+                            <button class="btn-card">Ver curso</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
 
 
 
     <script src="/js/menu.js"></script>
+    <script src="/js/cursos.js"></script>
 </body>
 </html>
