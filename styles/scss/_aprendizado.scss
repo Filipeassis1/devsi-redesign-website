@@ -22,6 +22,7 @@
     }
 
     .grid-cards-aprendizado{
+        flex: 1;
         display: grid;
         margin-top: 5.4rem;
         grid-template-columns: 1fr 1fr 1fr;
@@ -39,4 +40,7 @@
         }
    
     }
+
+
+
 }
