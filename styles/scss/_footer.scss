@@ -1,0 +1,96 @@
+footer{
+
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+
+    .container{
+        border-bottom: 1px solid #999999;
+        padding-bottom: 2rem;
+        @include flex(row,center,space-between);
+
+        // Responsivo para tablet
+        @include responsive(900px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2.4rem;
+        }
+
+        .logo-footer{
+
+
+            @include responsive(900px) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        .nav-footer{
+            @include flex(row,flex-start,space-between);
+            width: 100%;
+            max-width: 44.3rem;
+
+            @include responsive(900px) {
+                flex-direction: column;
+                align-items: flex-start;
+                max-width: 100%;
+                gap: 2rem;
+            }
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+                align-items: flex-start;
+                @include responsive(900px) {
+                    align-items: flex-start;
+                }
+                @include responsive(600px) {
+                    gap: 1rem;
+                }
+                li{
+                    a{
+                        font:$text-p14;
+                        color: $brand-primary-dark;
+                    }
+                }
+            }
+        }
+
+        .socials-footer{
+            width: 100%;
+            max-width: 16.5rem;
+            @include responsive(900px) {
+                max-width: 100%;
+                display: flex;
+                justify-content: flex-start;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+                align-items: flex-start;
+                @include responsive(900px) {
+                    align-items: flex-start;
+                }
+                @include responsive(600px) {
+                    gap: 1rem;
+                }
+                li{
+                    @include flex(row, flex-start, space-between);
+                    @include responsive(900px) {
+                        justify-content: flex-start;
+                    }
+                    a{
+                        display: flex;
+                        gap: 1.6rem;
+                        font:$text-p14;
+                        color: $brand-primary-dark;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+};

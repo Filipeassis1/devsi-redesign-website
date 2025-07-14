@@ -31,6 +31,16 @@
     cursor: pointer;
 }
 
+.btn-black{
+    color: $brand-primary-green;
+    font: $btn-font-b;
+    padding: 1.4rem 4.7rem;
+    border: none;
+    border-radius: 50px;
+    background-color: $brand-primary-dark;
+    cursor: pointer;
+}
+
 .card-flutuante{
     position: absolute;
     z-index: 10;

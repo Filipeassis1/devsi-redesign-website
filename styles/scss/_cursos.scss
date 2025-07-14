@@ -64,6 +64,13 @@
     
     }
 
+    @include responsive(750px){
+        .grid-cursos{
+            justify-items: center;
+            margin: 0 auto;
+        }
+    }
+
     
     
 }

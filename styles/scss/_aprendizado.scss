@@ -41,6 +41,20 @@
    
     }
 
+    @include responsive(900px){
+        .grid-cards-aprendizado{
+            grid-template-columns: 1fr 1fr;
+            
+        }
+    }
+
+    @include responsive(600px){
+        .grid-cards-aprendizado{
+            grid-template-columns: 1fr;
+            
+        }
+    }
+
 
 
 }
