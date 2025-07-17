@@ -1,0 +1,95 @@
+.home{
+    background-color: $brand-primary-dark;
+
+}
+
+.s-hero{
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+    .container{
+        @include flex(column, center,center);
+        gap: 4.2rem;
+        overflow-x: hidden;
+
+    }
+
+}
+
+header{
+
+    .nav-btns{
+
+        nav{
+
+            ul{
+
+                li{
+
+                    a{
+                        color: white !important;
+                    }
+                }
+            }
+
+        
+        }
+
+        .btns-header{
+
+            .btn-header-outline {
+                color: white;
+
+                img{
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+        
+
+    }
+
+}
+
+.info-hero{
+
+    span{
+        @include flex(column,center,center);
+        font: $text-p14;
+        color: $brand-primary-green;
+    }
+
+    h1{
+        color: $brand-primary-light;
+        text-align: center;
+    }    
+}
+
+
+.arrowhero {
+  display: block;
+  margin-top: 8.2rem;
+  animation: floatArrow 5s ease-in-out infinite;
+}
+
+@keyframes floatArrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+

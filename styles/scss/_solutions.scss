@@ -1,0 +1,99 @@
+.solutions{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    .container{
+
+
+        .top-info{
+            @include flex(column, flex-start, center);
+            gap: 3.2rem;
+            margin-bottom: 5.3rem;
+            h2{
+                color: $brand-primary-light
+            }
+
+            p{
+                color: #CACACA;
+                width: 100%;
+                max-width: 83.2rem;
+            }
+
+
+        }
+
+
+
+        .cards-solutions{
+
+            @include flex(row, center, flex-start);
+            gap: 3.2rem;
+
+            .s-card{
+
+                @include flex(column, flex-start, space-between);
+                gap: 2.2rem;
+                background-color: white;
+                border-radius: 1.6rem;
+                width: 100%;
+                max-width: 38.4rem;
+                height: 30rem;
+                padding: 1.6rem 2.4rem;
+
+                .top{
+                    @include flex(row,center,space-between);
+                }
+
+                .content{
+                    @include flex(row,center,flex-start);
+                    width: 100%;
+                    gap: .7rem;
+                    
+
+
+                    ul{
+                        @include flex(column,center,flex-start);
+                        width: 100%;
+                        gap: .7rem;
+                        li{
+                            width: 100%;
+                            font: $text-p;
+                            color: $gray-paragraf;                           
+                        }
+                    }
+
+                    span{
+                        content: '';
+                        width: 100%;
+                        max-width: 5px;
+                        height: 5px;
+                        border-radius: 50px;
+                        background-color: $brand-primary-green;
+
+                    }
+                }
+
+                .bottom-scard{
+                    @include flex(row, center, space-between);
+                    width: 100%;
+
+                    .btn-scard{
+                        width: 100%;
+                        max-width: 12.9rem;
+                        border-radius: 5rem;
+                        border: none;
+                        background-color: #E0E721;
+                        padding: .9rem 2.3rem;
+                        font: $btn-font-b;
+                        cursor: pointer;
+                    }
+                }
+
+
+
+
+                }
+
+            }
+        }
+    }

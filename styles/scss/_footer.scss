@@ -91,6 +91,36 @@ footer{
 
     }
 
+    &.white {
+      .container {
+        border-bottom: 1px solid #fff;
+      }
+      .logo-footer {
+        // Supondo que o logo seja uma imagem, troque para o logo branco no HTML
+        // Se for SVG, pode forçar o fill aqui se necessário
+      }
+      .nav-footer {
+        ul {
+          li {
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .socials-footer {
+        ul {
+          li {
+            a {
+              color: #fff;
+              svg, img {
+                fill: $brand-primary-green;
 
+              }
+            }
+          }
+        }
+      }
+    }
 
 };

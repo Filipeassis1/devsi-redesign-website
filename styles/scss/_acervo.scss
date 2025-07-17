@@ -1,0 +1,27 @@
+.acervo-bg{
+    background-color: white;
+}
+
+.acervo{
+    margin-top: 4.2rem;
+    .container{
+
+
+        .top-info{
+            @include flex(column,flex-start,center);
+            gap: 3.2rem;
+        }
+
+
+        .grid-acervo-cards{
+            margin-top: 5.4rem;
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+            gap: 3.2rem;
+
+        }
+
+    }
+
+}

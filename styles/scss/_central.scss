@@ -1,0 +1,29 @@
+.central{
+    padding-top: 10rem;
+    background-color: white;
+
+    .top-container{
+        @include flex(row, center, space-between);
+
+        margin-bottom: 6.4rem;
+
+        .title-left{
+            align-self: self-start;
+        }
+
+        .right-container{
+            width: 100%;
+            max-width: 59.2rem;
+
+            p{
+                margin-bottom: 6.4rem;
+            }
+
+        }
+    }
+
+    .cards-central{
+        @include flex(row,center,center);
+        gap: 3.2rem;
+    }
+}

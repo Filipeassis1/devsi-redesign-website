@@ -1,0 +1,59 @@
+.contact{
+    background-color: white;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    .container{
+
+        @include flex(column, center, center);
+
+        .contat-forms{
+
+            @include flex(column, center, center);
+            gap: 3.2rem;
+
+
+            .top-contact{
+                @include flex(column, center, center);
+                text-align: center
+
+            }
+
+            .form-contato {
+                @include flex(column, center, stretch);
+                gap: 1.6rem;
+                width: 100%;
+                max-width: 59.2rem;
+
+                .form-group {
+                    @include flex(column, start, stretch);
+                    width: 100%;
+                    gap: .8rem;
+
+                    label{
+                        font: $text-p;
+                    }
+
+                    input, textarea{
+                        width: 100%;
+                        padding: 1.2rem 1.6rem;
+                        border: 1px solid #D9D9D9;
+                        border-radius: .8rem;
+                        font-size: 1.6rem;
+                        &::placeholder {
+                            color: #AAAAB1;
+                            font-size: 1.6rem;
+                        }
+                    }
+                    textarea {
+                        min-height: 12rem;
+                        resize: vertical;
+                    }
+
+
+                }
+            }
+        }
+
+
+    }
+}

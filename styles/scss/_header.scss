@@ -1,3 +1,5 @@
+$white: #fff;
+
 header{
 
     .container{
@@ -18,7 +20,7 @@ header{
                     li{
                         a{
                             font: $text-p;
-                            color: $brand-primary-dark;
+                            color: $brand-primary-dark !important;
                             transition: all .5s ease-in;
 
                             &:hover{
@@ -31,6 +33,17 @@ header{
                     }
                 }
                 
+            }
+
+            .btns-header{
+
+                .btn-header-outline{
+                    color: $brand-primary-dark;
+
+                        svg img{
+                        color: $brand-primary-dark;
+                    }
+                }
             }
 
 
@@ -48,6 +61,22 @@ header{
             }
             
 
+        }
+    }
+
+    &.white {
+        .container {
+            .nav-btns {
+                nav {
+                    ul {
+                        li {
+                            a {
+                                color: $white !important;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
