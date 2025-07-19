@@ -7,15 +7,30 @@
     cursor: pointer;
     gap: 1.6rem;
     font: $btn-font-b;
-    color: $brand-primary-dark;
+    color: white !important;
 
 
     img{
         filter: none;
     }
+    
+}
 
-    &.white{
-        color: white;
+
+.btn-header-outline-dark{
+    @include flex(row, center, center);
+    padding: 1.4rem 4.7rem;
+    border: none;
+    border-radius: 5rem;
+    background-color: transparent;
+    cursor: pointer;
+    gap: 1.6rem;
+    font: $btn-font-b;
+    color: $brand-primary-dark !important;
+
+
+    img{
+        filter: none;
     }
     
 }

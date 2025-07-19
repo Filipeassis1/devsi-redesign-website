@@ -96,4 +96,20 @@
 
             }
         }
+}
+
+@include responsive(600px){
+
+    .solutions{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+        .container {
+            .cards-solutions {
+              @include flex(column, center, center);
+            }
+          }
+
     }
+
+}
