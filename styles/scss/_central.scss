@@ -27,3 +27,28 @@
         gap: 3.2rem;
     }
 }
+
+
+@include responsive(1088px){
+    .container{
+        .top-container{
+            flex-direction: column;
+            text-align: center;
+            gap: 2.4rem;
+
+            .title-left{
+                width: 100%;
+                h2{
+                    text-align: center;
+                }
+
+            }
+        }
+
+        .cards-central{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(38rem, 1fr));
+            
+        }
+    }
+}
