@@ -1,0 +1,142 @@
+.services{
+
+    .container{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        @include flex(column,center,center);
+
+
+
+        .top-services{
+            @include flex(column,center,center);
+            text-align: center;
+            gap: 3.2rem;
+            width: 100%;
+            max-width: 93.6rem;
+            margin-bottom: 10rem;
+        }
+
+        .services-section{
+            @include flex(column, center, center);
+            gap: 6.4rem;
+            height: 100%;
+
+            .card-service{
+
+                @include flex(row,flex-start,center);
+                width: 100%;
+                // height: 58.8rem;
+                max-width: 121.6rem;
+                position: relative;
+                background-color: white;
+                border-radius: 16px 0px 0px 16px;
+    
+                .service-left{
+                    @include flex(column, start, space-between);
+        
+       
+                    width: 100%;
+                    height: 100%;
+                    // max-width: 53.4rem;
+                    padding: 3.2rem;
+                    
+    
+                    .text-service{
+    
+                        max-width: 35.2rem;
+                        h3{
+                            margin-bottom: 1.6rem;
+                        }
+                        p{
+                            margin-bottom: 3.2rem ;
+                        }
+    
+                    }
+    
+                    .fxs{
+                        position: absolute;
+                        top: 38rem;
+                        margin-top: auto;
+                        img{
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+    
+                .service-right{
+                    background-color: $brand-primary-dark;
+                    padding: 3.2rem;
+                    border-radius: 0px 16px 16px 0px;
+                    height: 100%;
+                    width: 100%;
+                    // max-width: 71.3rem;
+    
+                    ul{
+                        @include flex(column, flex-start,center);
+                        gap: 2.4rem;
+                        li{
+    
+                            strong{
+                                font: $text-p;
+                                color: $brand-primary-green;
+                                font-weight: 600;
+                            }
+    
+                            p{
+                                margin-top: .8rem;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card-cta{
+            // margin: 6.4rem;
+            }
+            
+        }
+
+
+
+
+    }
+}
+
+footer{
+    background-color: $brand-primary-dark;
+}
+
+@include responsive(1220px){
+    .services{
+
+        .container{
+            // gap: 10rem;
+  
+
+            .services-section{
+                @include flex(column, center, center);
+                gap: 6.4rem;
+                height: 100%;
+
+                .card-service{
+                    @include flex(column,center,center);
+    
+    
+                    .service-left{
+                        .fxs{
+                            display: none;
+                        }
+                    }
+    
+    
+                }
+                
+            }
+
+
+
+        }
+    }
+}

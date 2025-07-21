@@ -85,15 +85,45 @@
                     }
                 }
             }
+
+            .infos-empresa{
+                .info{
+                    h2{
+                        font: $h2;
+                    }
+
+                    p{
+                        font: $text-p;
+                    }
+                }
+            }
  
         }
     }
 }
 
-@include responsive(880px){
-    .top-empresa{
-        display: flex;
-        flex-direction: column;
-    
+@include responsive(680px){
+
+    .empresa{
+        .container{
+            .top-empresa{
+                display: flex;
+                flex-direction: column;
+            
+            }
+
+            .infos-empresa{
+                .info{
+                    @include flex(column, flex-start, center);
+                    h2{
+                        font-size: 2.6rem;
+                    }
+                }
+            }
+
+            
+        }
+
     }
+
 }

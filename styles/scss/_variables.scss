@@ -38,3 +38,22 @@ $acervo-title: 700 2rem/120% #{$font-family};
 $h1-mobile: 700 4.2rem/110% #{$font-family};
 $h2-mobile: 700 3.2rem/112% #{$font-family};
 $text-p-mobile: 400 1.6rem/120% #{$font-family};
+
+//TABLET FONTS (680px)
+$h1-tablet: 700 5.6rem/110% #{$font-family};
+$h2-tablet: 700 3.8rem/112% #{$font-family};
+$h3-tablet: 700 2.2rem/120% #{$font-family};
+$text-p-tablet: 400 1.7rem/120% #{$font-family};
+
+//SMALL MOBILE FONTS (375px)
+$h1-small-mobile: 700 3.6rem/110% #{$font-family};
+$h2-small-mobile: 700 2.8rem/112% #{$font-family};
+$h3-small-mobile: 700 2rem/120% #{$font-family};
+$text-p-small-mobile: 400 1.5rem/120% #{$font-family};
+
+
+$space-xs: 0.8rem;
+$space-sm: 1.6rem;
+$space-md: 3.2rem;
+$space-lg: 6.4rem;
+$space-xl: 10rem;

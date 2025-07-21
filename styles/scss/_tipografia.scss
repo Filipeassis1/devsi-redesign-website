@@ -50,3 +50,41 @@ p{
         font: $btn-font-b;
     }
 }
+
+@include responsive(680px){
+
+    h1{
+        font: $h1-tablet;
+    }
+
+    h2{
+        font: $h2-tablet;
+    }
+
+    h3{
+        font: $h3-tablet;
+    }
+
+    p{
+        font: $text-p-tablet;
+    }
+}
+
+@include responsive(375px){
+
+    h1{
+        font: $h1-small-mobile;
+    }
+
+    h2{
+        font: $h2-small-mobile;
+    }
+
+    h3{
+        font: $h3-small-mobile;
+    }
+
+    p{
+        font: $text-p-small-mobile;
+    }
+}
