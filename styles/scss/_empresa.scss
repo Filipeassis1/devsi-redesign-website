@@ -4,6 +4,8 @@
     padding-bottom: 10rem;
 
     .container{
+        @include flex(column,stretch,center);
+        gap: 3.2rem;
 
         .top-empresa{
             @include flex(row, stretch, center);
@@ -13,12 +15,14 @@
                 width: 100%;
                 // max-width: 56rem;
                 // height: 56rem;
+           
                 img {
                     width: 100%;
                     height: 100%;
                     // max-width: 56rem;
                     object-fit: cover;
                     display: block;
+                    border-radius: 8px;
                 }
             }
 
@@ -113,6 +117,9 @@
             }
 
             .infos-empresa{
+                
+                @include flex(column,start,start);
+                
                 .info{
                     @include flex(column, flex-start, center);
                     h2{

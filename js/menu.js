@@ -19,4 +19,26 @@ hamburguer.addEventListener('click', ()=>{
 });
 
 
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Para alternar entre diferentes estilos
+function changeHeaderStyle(style) {
+    const header = document.querySelector('header');
+    
+    // Remove todas as classes de estilo
+    header.classList.remove('transparent', 'glass', 'gradient');
+    
+    // Adiciona a nova classe
+    if (style !== 'default') {
+        header.classList.add(style);
+    }
+}
 

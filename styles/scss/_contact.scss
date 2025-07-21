@@ -4,7 +4,7 @@
     padding-bottom: 10rem;
     .container{
 
-        @include flex(column, center, center);
+        @include flex(row, start, space-between);
 
         .contat-forms{
 
@@ -13,8 +13,9 @@
 
 
             .top-contact{
-                @include flex(column, center, center);
-                text-align: center
+                @include flex(column, start, center);
+                text-align: start;
+                gap: 1.6rem
 
             }
 
@@ -54,6 +55,46 @@
             }
         }
 
+        .redes-sociais{
+            @include flex(column,start,start);
+            gap: 3.2rem;
+            ul{
+                @include flex(column,start,start);
+                gap: 3.2rem;
+                li{
+                    a{
+                        display: flex;
+                        gap: 3.2rem;
+                        font: $text-p;
+                        color: $brand-primary-dark;
+                    }
+                    
+                }
+            }
+        }
 
+
+    }
+}
+
+@include responsive(774px){
+    #contact{
+        .container{
+            @include flex(column, start,center);
+            gap: 3.2rem;
+
+            .redes-sociais{
+
+                ul{
+
+                    li{
+                        a{
+                            display: flex;
+                            gap: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
