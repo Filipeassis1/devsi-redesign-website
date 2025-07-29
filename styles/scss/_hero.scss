@@ -5,6 +5,14 @@
     .container{
         @include flex(column,center,center);
         position: relative;
+
+
+        .info-hero{
+
+            .change{
+                color: $brand-primary-green;
+            }
+        }
     }
     
     .text-hero{
@@ -99,16 +107,32 @@
                 top: 42%;
                 left: 40%;
                 width: 100%;
-                max-width: 26rem;
-
-
-                
+                max-width: 20rem;
+                height: 4rem;
             }
         }
-
     }
 
+    // Estilo para o cursor piscante
+    .change {
+        position: relative;
+        
+        &::after {
+            content: '|';
+            animation: blink 1s infinite;
+            color: $brand-primary-green;
+            font-weight: bold;
+        }
+    }
 
+    @keyframes blink {
+        0%, 50% {
+            opacity: 1;
+        }
+        51%, 100% {
+            opacity: 0;
+        }
+    }
 }
 
 

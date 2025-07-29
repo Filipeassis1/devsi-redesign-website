@@ -15,8 +15,7 @@
             .top-contact{
                 @include flex(column, start, center);
                 text-align: start;
-                gap: 1.6rem
-
+                gap: 1.6rem;
             }
 
             .form-contato {
@@ -60,13 +59,22 @@
             gap: 3.2rem;
             ul{
                 @include flex(column,start,start);
-                gap: 3.2rem;
+                width: 100%;
+                gap: 3rem;
                 li{
+                    width: 100%;
                     a{
                         display: flex;
-                        gap: 3.2rem;
+                        align-items: center;
+                        width: 100%;
+                        gap: 1rem;
                         font: $text-p;
                         color: $brand-primary-dark;
+
+                        img{
+                            width: 100%;
+                            max-width: 3.2rem;
+                        }
                     }
                     
                 }

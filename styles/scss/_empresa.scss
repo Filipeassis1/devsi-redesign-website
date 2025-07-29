@@ -58,14 +58,7 @@
             }
         }
 
-        .infos-empresa{
-            @include flex(row, center, space-between);
 
-            .info{
-                margin-top: 8.2rem;
-                @include flex(column,center,center);
-            }
-        }
     }
 }
 

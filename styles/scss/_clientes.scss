@@ -1,13 +1,26 @@
 .clientes{
     @include flex(column, center, center);
     background-color: white;
-    height: 16rem;
+    // height: 16rem;
     overflow-x: hidden;
 
     .container{
+        @include flex(column,space-between,center);
+        gap: 3.2rem;
+
+        padding-top: 2.6rem;
+        padding-bottom: 2.6rem;
+
+        .infos-empresa{
+            @include flex(row, center, space-between);
+
+            .info{
+                margin-top: 2.2rem;
+                @include flex(column,center,center);
+            }
+        }
 
         .carrossell{
-
             @include flex(row,center, center);
             gap: 3.2rem;
             animation: slide 25s linear infinite;
@@ -19,11 +32,17 @@
                 max-width: 15rem;
                 height: 5.7rem;
             }
-    
         }
-
     }
-
-
-
 }
+
+@include responsive(680px){
+    .clientes .container .infos-empresa{
+        display: none;
+    }
+}
+
+
+
+
+

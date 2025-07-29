@@ -1,9 +1,10 @@
 .services{
 
     .container{
-        margin-top: 10rem;
+        margin-top: 18rem;
         margin-bottom: 10rem;
         @include flex(column,center,center);
+        gap: 3.2rem;
 
 
 
@@ -13,8 +14,149 @@
             gap: 3.2rem;
             width: 100%;
             max-width: 93.6rem;
-            margin-bottom: 10rem;
+            margin-bottom: 5rem;
         }
+
+        .planos{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+             gap: 3.2rem;
+             width: 100%;
+            //  max-height: 55rem;
+            grid-auto-rows: max-content;
+             .card-plano{
+                 @include flex(column, stretch,center);
+                 gap: 2.4rem ;
+                 padding:3.2rem 1.6rem ;
+                 width: 100%;
+                 height: auto;
+                 min-height: fit-content;
+                 border: 1px solid rgba(0, 0, 0, 0.151);
+                 border-radius: 8px;
+ 
+                 .plano-valor{
+                     @include flex(column, start, center);
+                     gap: 1.4rem;
+                     position: relative;
+ 
+                     .recomenda{
+                         background-color: $brand-primary-green;
+                         padding: 1rem 1.6rem;
+                         border-radius: .8rem;
+                         font-weight: 700;
+                         position: absolute;
+                         right: 0;
+                         top: 0;
+                     }
+ 
+                     .valor-plano{
+ 
+                         strong{
+                             font: $text-p-bold;
+                         }
+                         h2{
+                             span{
+                                 font-size: 2rem;
+                                 color: $gray-paragraf;
+                                 font-weight: 400;
+                             }
+                         }
+ 
+                     }
+                 }
+     
+                 .btn-primary{
+                     width: 100%;
+                 }
+ 
+                 .btn-black{
+                     color:#fff;
+                     width: 100%;
+                 }
+     
+     
+                 .lista-plano{
+                     ul{
+                         @include flex(column, start, center);
+                         gap: 1.6rem;
+                         
+     
+                         li{
+                             @include flex(row, center, start);
+                             font: $text-p;
+                             color: $gray-paragraf;
+                             gap:.8rem ;
+                         }
+ 
+                         li.starterp{
+                             font-weight: 700;
+                             color: $brand-primary-dark;
+                         }
+                     }
+                 }
+             }
+         }
+     
+         table{
+     
+             width: 100%;
+             max-width: 121.6rem;
+             table-layout: fixed;
+             padding-top: 10rem;
+             padding-bottom: 10rem;
+             border-collapse: collapse;
+     
+             tbody{
+     
+                 
+                 tr{
+                     width: 100%;
+                     height: 80px;
+                     &:not(:first-child){
+                         margin-top: .8rem;
+     
+                     }
+     
+                     
+                     &:first-child{
+                         font-weight: 700;
+                     }
+     
+     
+     
+                     th {
+                         width: 30.4rem;
+                         padding: 1.6rem;              
+                         font: $text-p14;
+                         text-align: left;
+                         color: #6d6d6d;
+                         border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+      
+                         
+        
+                     }
+     
+                     // Estilo ESPECÍFICO para o cabeçalho (primeira linha)
+                     &:first-child th {
+                         background-color: $brand-primary-dark;
+                         color: #fff;
+                         font: $text-p-bold;
+                     }
+     
+                     &:first-child th:first-child {
+                         color: white;
+                         font: $text-p-bold;
+                     }
+     
+                     th:first-child {
+                         font: $text-p-bold;
+                         color: $brand-primary-dark;
+                     }
+                 }
+     
+             }
+     
+         }
 
         .services-section{
             @include flex(column, center, center);
@@ -98,6 +240,49 @@
             
         }
 
+        .atendimento-tecnico{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr)); 
+            gap: 3.2rem;
+
+            .atendimento{
+
+                
+                width: 100%;
+                padding: 1.6rem;
+                border-radius: .8rem;
+                border: 1px solid rgba(109, 109, 109, 0.308);
+
+                p{
+                    margin-top: 1.6rem;
+                    font: $text-p;
+                }
+
+                .list{
+                    margin-top: 1.6rem;
+                    ul{
+                       
+                        
+                        li{
+                            list-style: inside;
+                            font: $text-p14;
+
+                        }
+                    }
+
+                }
+
+                
+            }
+        }
+
+
+        .comparacao{
+            width: 100%;
+            overflow-x: auto;
+        }
+
 
 
 
@@ -140,3 +325,14 @@ footer{
         }
     }
 }
+
+@include responsive(800px) {
+    .services .container table {
+      min-width: 500px; // ajuste para telas pequenas
+      font-size: 1.2rem;
+    }
+    .services .container table th,
+    .services .container table td {
+      padding: 0.8rem;
+    }
+  }
